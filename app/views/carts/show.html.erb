@@ -5,7 +5,9 @@
   </header>
 
   <% if (cart.size == 0) %>
-    <h3>No items added to the cart! Please <%= link_to 'click here', :root %> to view and add items.</h3>   
+    <div class="alert alert-danger" role="alert">
+     <h3>No items added to the cart! Please <%= link_to 'click here', :root %> to view and add items.</h3>   
+    </div>
   <% else %>
     <div class="panel panel-default items">
       <table class="table table-bordered">
