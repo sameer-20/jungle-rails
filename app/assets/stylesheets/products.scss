@@ -7,6 +7,14 @@ main section.categories-show {
     flex-wrap:       wrap;
     justify-content: space-around;
 
+    header span {
+      background-color: red;
+      font-size: larger;         
+      position: absolute;      
+      margin-left: -15px;
+      margin-top: -15px;
+    }
+
     .product {
       // flex:      1;
       max-width: 260px;
