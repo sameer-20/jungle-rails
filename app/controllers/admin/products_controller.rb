@@ -1,5 +1,7 @@
 class Admin::ProductsController < ApplicationController
 
+  http_basic_authenticate_with name: ENV["ADMIN_USER_ID"], password: ENV["ADMIN_USER_PASSWORD"]
+  
   def index
     @products = Product.order(id: :desc).all
   end
