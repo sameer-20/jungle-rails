@@ -1,5 +1,7 @@
 require 'rails_helper'
 
+# Verify user login feature
+
 RSpec.feature "UserLogins", type: :feature, js: true do
   
   # SETUP
